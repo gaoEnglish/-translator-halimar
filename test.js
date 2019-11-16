@@ -1,3 +1,4 @@
-const {tokenizer} = require( './Translator/index');
+const { compiler } = require( './Translator/index')
 
-console.log(tokenizer('select "桃乐丝" from "勇士" where "背景故事"'));
+let code = '(add 2 (subtract 4 2))'
+console.log(compiler(code));
